@@ -1,0 +1,13 @@
+minikube version
+minikube profile list
+minikube start
+minikube start --driver=virtualbox  --no-vtx-check
+minikube status
+minikube dashboard
+minikube stop
+minikube delete 
+minikube delete --all
+
+
+Deploy applications: kubectl create deployment --image=nginx mynginx
+Access the Service  using Load Balancer: kubectl expose deployment mynginx --type=LoadBalancer --port=80
